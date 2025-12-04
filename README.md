@@ -14,7 +14,7 @@ An interactive dashboard for exploring 45,000+ Congressional Private Laws from 1
 
 ```
 private-laws-dashboard/
-├── app.py              # Main application entry point
+├── app.py              # Main application
 ├── layout.py           # Dashboard layout components
 ├── callbacks.py        # Dash callback functions
 ├── styles.py           # Color theme and styling
@@ -22,44 +22,11 @@ private-laws-dashboard/
 ├── data_loader.py      # Data loading utilities
 ├── requirements.txt    # Python dependencies
 ├── .gitignore          # Git ignore rules
-├── Private_Laws_Data.csv  # Dataset (not in repo)
-└── README.md           # This file
+├── Private_Laws_Data.csv  # Dataset
+└── README.md           
 ```
 
-## Local Development
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Private-Law-Dashboard.git
-   cd Private-Law-Dashboard
-   ```
-
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Add your `Private_Laws_Data.csv` file to the project root
-
-5. Run the application:
-   ```bash
-   python app.py
-   ```
-
-6. Open http://127.0.0.1:8050 in your browser
-
-## Deployment (Render)
-
-This app is configured for deployment on Render:
-
-- **Build Command**: `pip install -r requirements.txt`
-- **Start Command**: `gunicorn app:server`
 
 ## Data Format
 
@@ -76,17 +43,14 @@ The CSV file should contain these columns:
 - `pdf_link`: Link to PDF document
 - `details_link`: Link to Congress.gov page
 
-## Tech Stack
+## Libraries Used
 
 - [Dash](https://dash.plotly.com/) - Web framework
 - [Plotly](https://plotly.com/) - Interactive charts
 - [Pandas](https://pandas.pydata.org/) - Data processing
 - [Gunicorn](https://gunicorn.org/) - WSGI server
 
-## Author
+## Credits
 
-Kenneth Nguyen
-
-## License
-
-MIT
+Developed by **Kenneth Nguyen**.  
+This project was completed in collaboration with the **University of Houston Law Center** and **Professor Chris Mirasola** as part of ongoing research into private legislation.

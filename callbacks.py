@@ -60,7 +60,7 @@ def register_callbacks(app, df):
         # Determine timeline bar color based on filter state
         timeline_bar_color = COLORS['filter_orange'] if (selected_subject or selected_relief) else COLORS['bar_default']
         
-        # ===== TIMELINE CHART =====
+        # -------------TIMELINE CHART-------------
         if view_type == 'year':
             timeline_data = filtered_df.groupby('year').size().reset_index(name='count')
             x_data = timeline_data['year']
@@ -102,7 +102,7 @@ def register_callbacks(app, df):
             bargap=0.15
         )
         
-        # ===== SUBJECT BREAKDOWN =====
+        # -------------SUBJECT BREAKDOWN-------------
         year_filtered_df = df[(df['year'] >= start_year) & (df['year'] <= end_year)]
         subject_counts = count_categories(year_filtered_df, 'subject_category', SUBJECT_CATEGORIES)
         
@@ -230,7 +230,7 @@ def register_callbacks(app, df):
             html.Tbody(table_rows)
         ], style={'width': '100%', 'borderCollapse': 'collapse', 'fontSize': '11px'})
         
-        # ===== RELIEF BREAKDOWN =====
+        # -------------RELIEF BREAKDOWN-------------
         relief_counts = count_categories(year_filtered_df, 'relief_category', RELIEF_CATEGORIES)
         has_relief_data = sum(relief_counts.values()) > 0
         
