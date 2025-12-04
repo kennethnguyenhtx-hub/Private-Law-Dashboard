@@ -1,4 +1,4 @@
-# Private Laws Database Dashboard
+# Private Laws Database Dashboard (In-Progress)
 
 An interactive dashboard for exploring 45,000+ Congressional Private Laws from 1789-2025.
 
@@ -26,7 +26,10 @@ private-laws-dashboard/
 └── README.md           
 ```
 
+## Next Steps
 
+1. Modify the AI pipeline to categorize and summarize each private law based on updated codebooks
+2. Use a subset of data (~500 private laws) to test AI pipeline and manually QC
 
 ## Data Format
 
