@@ -1,10 +1,9 @@
 # Private Laws Database Dashboard (In-Progress)
+*The first publicly accessible, comprehensive database of U.S. Congressional Private Laws (1789-2025)*
 
-> The first publicly accessible, comprehensive database of U.S. Congressional Private Laws (1789-2025)
+![Dashboard Demo](DashboardGIF.gif)
 
-Screenshot
-
-Live Prototype: Link
+Live Prototype: [Link](https://private-law-dashboard.onrender.com)
 
 ## Overview
 
@@ -26,7 +25,7 @@ This project supports Professor Chris Mirasola's research at the University of H
 - Validating model outputs against 1000+ manually labeled laws from UH Law students
 - Iterating on prompt engineering and codebook refinement
 
-## Current Status
+## Project Status
 | Milestone | Status | Notes |
 |-------|-------|----------|
 | Data collection + cleaning | DONE | Python script pulling from Congress.gov and GovInfo API |
