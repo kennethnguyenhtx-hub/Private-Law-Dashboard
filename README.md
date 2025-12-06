@@ -1,5 +1,5 @@
 # Private Laws Database Dashboard (In-Progress)
-*The first publicly accessible, comprehensive database of U.S. Congressional Private Laws (1789-2025)*
+*The first publicly accessible, comprehensive database of [U.S. Congressional Private Laws (1789-2025)](https://www.senate.gov/legislative/common/briefing/leg_laws_acts.htm)*
 
 ![Dashboard Demo](DashboardGIF.gif)
 
